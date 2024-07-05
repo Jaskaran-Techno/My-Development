@@ -7,14 +7,40 @@
     <link rel="stylesheet" href="index.css">
 </head>
 <body>
-Hi this my first website.
-<h1>My Bookmark</h1>
-<h2>Main Bookmark</h2>
-<h2>Main Bookmark</h2>
-<h2>Main Bookmark</h2>
-<h2>Main Bookmark</h2>
-<h2>Main Bookmark</h2>
-<h2>Main Bookmark</h2>
+    <table>
+        <caption>Employee Details</caption>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Designation</th>
+                <th>Fav Language</th>
+            </tr>
+        </thead>
+        <tbody>
+
+
+            <tr>
+                <td>Harry</td>
+                <td>Programmer</td>
+                <td>JavaScript</td>
+            </tr>
+
+            <tr>
+                <td colspan="2">Sam</td>
+                <td rowspan="2">Java</td>
+            </tr>
+            <tr>
+                <td colspan="2">Sam</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="2">Sam</td>
+                <td rowspan="2">foot</td>
+            </tr>
+        </tfoot>
+    </table>
+
 <script src="index.js"></script>
 </body>
 </html>

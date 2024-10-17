@@ -52,14 +52,39 @@ function Sum(a, b) {
 let a = 1;
 let b = 2;
 
+// strings
 
+let k = `karan`; // this type of string is called template literal which is enclosed by backticks.
+console.log(k);
 
+// Map, Filter and reduce for arrays
 
+//map
+let array = [2, 3, 4]
+console.log(array);
 
+ let p = array.map((value) => {
+   console.log(value)
+   return value + 1
+})
+console.log(p);
 
-
-
-
+//filter
+let array2 = [10, 2, 6, 3, 5, 89]
+ 
+let m = array2.filter((m) => {
+  return m < 10;
+})
+console.log(m);
+ 
+//reduce
+let array3 = [10, 2, 6, 3, 5, 89]
+ 
+let n = array2.filter((n1, n2) => {
+  return n1 + n2;
+})
+console.log(n);
+ 
 
 
 

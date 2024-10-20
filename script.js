@@ -45,13 +45,16 @@ $(document).ready(function(){
     })
 })
 
+// functions in javascript
+
 function Sum(a, b) {
   return sum(a + b)
-  console.log("Done");
+  
 }
 let a = 1;
 let b = 2;
 
+console.log("Done");
 // strings
 
 let k = `karan`; // this type of string is called template literal which is enclosed by backticks.

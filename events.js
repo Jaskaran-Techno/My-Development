@@ -13,7 +13,12 @@ btn.addEventListener("click", function (e) {
   alert("hello2");
 });
 
-
+let a = prompt("What is your favourite number");
+if (a == 2) {
+  btn.removeEventListener("clcik", function (e) {
+    alert("hello3");
+  })
+}
 
 
 

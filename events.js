@@ -27,6 +27,7 @@ let b = array.map((value) => {
 console.log(b);
 
 let c = prompt("enter a value here");
+console.log(c);
 
 
 

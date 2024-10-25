@@ -13,4 +13,30 @@ let promise = new Promise(function (resolve, reject) {
   
   console.log("hello 3");
   console.log(promise);
+
+
+// .then & .ctach syntax
   
+promise.then((value) => {
+  console.log(value);
+})
+
+promise.catch((error) => {
+  console.log(error);
+})
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

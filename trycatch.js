@@ -6,6 +6,9 @@ setTimeout(() => {
     console.log("Peter");
   } catch (error) {
     console.log(error);
+}
+  finally {
+    console.log("get me");
   }
   
   setTimeout(() => {

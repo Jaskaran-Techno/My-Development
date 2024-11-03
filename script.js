@@ -7,6 +7,12 @@ const hiddenMenu = document.querySelector('.desktop');
 function openMenu() {
   hiddenMenu.classList.add('popup');
 }
+const lessonContainer = document.querySelector('.lessons');
+lessonContainer.innerHTML = fitnessClasses;
+const hiddenMenus = document.querySelector('.desktop');
+function openMenu() {
+  hiddenMenu.classList.add('popup');
+}
 function closeMenu() {
   hiddenMenu.classList.remove('popup');
 }

@@ -25,8 +25,10 @@ promise.catch((error) => {
   console.log(error);
 })
 
-
-
+let promises = new promise(function (resolve, reject) {
+  alert("This is a promise");
+  reject(56);
+});
 
 
 

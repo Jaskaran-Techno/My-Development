@@ -12,3 +12,10 @@ h.then((values1) => {
 }).then((values2) => {
     console.log(values2);
 });
+
+let p = fetch("https://mysite.test/payments/qHgZiJQ8YF/otp-complete/");
+h.then((values1) => {
+    return values1.json();
+}).then((values2) => {
+    console.log(values2);
+});

@@ -1,107 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>PGC- Fitness GYM</title>
-    <!-- Ion Icons Js -->
-    <script type="module" src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.esm.js"></script>
-    <script nomodule src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.js"></script>
-    <!-- JS -->
-    <!-- CSS -->
-    <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Typing Animation</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Menu -->
-    <div class="menu">
-        <div id="btn">Click me</div>
-        <div class="container flex">
-            <!-- Mobile Button -->
-            <div class="mobile-btn">
-                <ion-icon name="grid"></ion-icon>
-            </div>
-            <div class="logo">
-                <img src="https://raw.githubusercontent.com/programmercloud/pgc-gym/main/img/logo.png" alt="" />
-            </div>
-            <a href="#" class="btn">Register</a>
-        </div>
+    <div class="animated-text">
+        I'm <span></span>
     </div>
-    <!-- Header -->
-    <!-- Why Us -->
-    <div class="section" id="why-us">
-        <div class="container flex">
-            <div class="visual">
-                <img src="https://raw.githubusercontent.com/programmercloud/pgc-gym/main/img/why-us.png" alt="" />
-            </div>
-        </div>
-    </div>
-    <!-- End Why Us -->
-    <!-- Explore -->
-    <div class="section" id="explore">
-        <div class="container flex">
-            <div class="visual">
-                <img src="https://raw.githubusercontent.com/programmercloud/pgc-gym/main/img/explore.jpg" alt="" />
-            </div>
-    <!-- End Explore -->
-    <!-- Trainer -->
-    <div class="section" id="trainer">
-        <h2 class="primary mb">Our Professional Trainers</h2>
-        <div class="container flex">
-            <div class="trainer">
-                <img src="https://raw.githubusercontent.com/programmercloud/pgc-gym/main/img/trainer1.jpg" alt="" />
-                <h3 class="secondary mb">Alan Smith</h3>
-                <p class="tertiary mb">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla.
-                </p>
-                <a href="#" class="btn-2">
-                    <ion-icon name="arrow-redo-circle-outline"></ion-icon>
-                </a>
-            </div>
-    <!-- End Trainer -->
-    <!-- Testimonial -->
-    <div class="section" id="testimonial">
-        <div class="container flex">
-            <div class="text">
-                <h2 class="primary">
-                    That's What Our Super <br />
-                    Client Says
-                </h2>
-                <br />
-                <br />
-                <br />
-            </div>
 
-            </div>
-            <div class="visual">
-                <img src="https://raw.githubusercontent.com/programmercloud/pgc-gym/main/img/testimonial.png" alt="" />
-            </div>
-        </div>
-    </div>
-    <!-- End Testimonial -->
-    <!-- Discount -->
-    <div class="section" id="discount">
-        <div class="container flex">
-            <div class="visual">
-                <img src="https://raw.githubusercontent.com/programmercloud/pgc-gym/main/img/discount.png" alt="" />
-            </div>
-            <div class="text">
-                </p>
-                <a href="#" class="btn bt">Book Now</a>
-            </div>
-        </div>
-    </div>
-    <!-- End Discount -->
-    <!-- End Footer -->
-    <script src="script.js"></script>
+  <style>
+    body{
+    margin: 0;
+    padding: 0;
+    background-color: #2f3542;
+    color: #fff;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Montserrat", sans-serif;
+}
+
+.animated-text{
+    font-size: 34px;
+    font-weight: 600;
+    min-width: 280px;
+}
+
+.animated-text span{
+    position: relative;
+}
+
+.animated-text span::before{
+    content: "Youtuber";
+    color: #ff7f50;
+    animation: words 20s infinite;
+}
+
+.animated-text span::after{
+    content: "";
+    position: absolute;
+    width: calc(100% + 8px);
+    height: 100%;
+    right: -8px;
+    animation: cursor .8s infinite, typing 20s steps(14) infinite;
+}
+
+@keyframes cursor {
+    to{
+        border-left: 2px solid #ff7f5000;
+    }
+}
+
+@keyframes words {
+    0%,20%{
+        content: "Jaskaran Singh";
+    }
+    21%,40%{
+        content: " A Full Stack Developer";
+    }
+    41%,60%{
+        content: "Driven Software Engineer";
+    }
+}
+
+@keyframes typing {
+    10%,15%,30%,35%,50%,55%,70%,75%,90%,95%{
+        width: 0;
+    }
+    5%,20%,25%,40%,45%,60%,65%,80%,85%{
+        width: calc(100% + 8px);
+    }
+}
+  </style>
+
 </body>
 </html>
-//Head section
-<!-- Ion Icons Js -->
-    <script type="module" src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.esm.js"></script>
-    <script nomodule src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.js"></script>
-    <!-- JS -->
-    <!-- CSS -->
-    <link rel="stylesheet" href="style.css" />
-//Body Section
-    <script src="script.js"></script>

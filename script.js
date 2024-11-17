@@ -370,7 +370,7 @@ console.log(m);
 //reduce
 let array3 = [10, 2, 6, 3, 5, 89]
  
-let n = array2.filter((n1, n2) => {
+let n = array2.reduce((n1, n2) => {
   return n1 + n2;
 })
 console.log(n);

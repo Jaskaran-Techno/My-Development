@@ -30,6 +30,16 @@ let promises = new promise(function (resolve, reject) {
   reject(56);
 });
 
+let p = new Promise((resolve, reject) => {
+  let a = 1 + 1;
+  if (a == 1) {
+    resolve('Success');
+  }
+  else {
+    reject('Failed');
+  }
+}); 
+
 
 
 
